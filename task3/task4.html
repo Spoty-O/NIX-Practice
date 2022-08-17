@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page</title>
+</head>
+
+<body>
+    <canvas id="rectangle"></canvas>
+    <canvas id="triangle"></canvas>
+    <script>
+        function rectangle() {
+            this.canvas = document.getElementById('rectangle');
+            this.ctx = canvas.getContext('2d');
+            ctx.fillRect(25, 25, 100, 100);
+        }
+
+        function triangle() {
+            this.canvas = document.getElementById('triangle');
+            this.ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(50, 25);
+            ctx.lineTo(0, 130);
+            ctx.lineTo(100, 130);
+            ctx.fill();
+        }
+
+        rectangle();
+        triangle();
+    </script>
+</body>
+
+</html>
