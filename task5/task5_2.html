@@ -44,10 +44,7 @@
 					item.style.borderColor = '#999';
 				}
 			});
-			if (!send) {
-				alert('Fill all fields!')
-			}
-			return send;
+			send ? document.forms['myForm'].submit() : alert('Fill all fields!');
 		}
 	</script>
 </head>
