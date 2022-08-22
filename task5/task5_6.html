@@ -55,6 +55,7 @@
 			let ul = parent.querySelector('ul');
 
 			if (ul) {
+				e.preventDefault();
 				if (ul.style.display == 'none' || !ul.style.display) {
 					parent.style.listStyleImage = `url('./img/minus.gif')`;
 					ul.style.display = 'block';
@@ -63,10 +64,6 @@
 					parent.style.listStyleImage = `url('./img/plus.gif')`;
 					ul.style.display = 'none';
 				}
-				return false;
-			}
-			else {
-				return true;
 			}
 		}
 	</script>
