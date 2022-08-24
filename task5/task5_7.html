@@ -84,20 +84,26 @@
 			2. Сделайте так, чтобы выпадающие элементы div не исчезали сразу.
 			3. Задание выполнить с помощью JS. Ршения с помощью CSS не использовать.
 		*/
-
+		const stack = {
+			subMenu1: null,
+			subMenu2: null,
+			subMenu3: null
+		};
 		/*
 		**	Функция показывает меню с указанным ID
 		*/
 		function showMenu(objID) {
+			clearInterval(stack[objID]);
 			document.getElementById(objID).style.visibility = "visible";
 		}
 		/*
 		**	Функция убирает меню с указанным ID
 		*/
 		function hideMenu(objID) {
-			var obj = document.getElementById(objID);
-			obj.style.transition = 'visibility 0.5s';
-			obj.style.visibility = "";
+			let timer = setTimeout(() => {
+				document.getElementById(objID).style.visibility = "";
+			}, 500)
+			stack[objID] = timer;
 		}		
 	</script>
 </head>
