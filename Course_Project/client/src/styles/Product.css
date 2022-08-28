@@ -159,5 +159,5 @@
 .prod_full>div:last-of-type {
     display: flex;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 25px;
 }

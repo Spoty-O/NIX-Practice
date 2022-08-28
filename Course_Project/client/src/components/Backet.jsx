@@ -3,12 +3,15 @@ import '../styles/Backet.css'
 import Rout from './Rout';
 
 import img from '../styles/Prod1.svg';
+import img1 from '../styles/Prod4.svg';
+import img2 from '../styles/Prod5.svg';
+import ProductDescrip from './ProductDescrip';
 
 function Backet() {
     return (
         <>
             <Rout />
-            <p id='back'><span>Моя корзина</span><span><a href="/#">Очистить корзину</a></span></p>
+            <p className='back_p'><span>Моя корзина</span><span><a href="/#">Очистить корзину</a></span></p>
             <div className='backet_content'>
                 <div className='backet_list'>
                     <table className='list_prod_info'>
@@ -58,8 +61,15 @@ function Backet() {
                     <button>Оформить заказ</button>
                 </div>
             </div>
-            <p>С этим покупают</p>
-            <div></div>
+            <p className='face_p'>С этим покупают</p>
+            <div className='descrip_list_backet'>
+                <ProductDescrip img={img1} name={`Пряжа Arachna "Macrame MINI"`} price={"1053 $"} discount={'499 $'} />
+                <ProductDescrip img={img2} name={`Шнур "Gamma" 0.8 мм, 50 м`} price={"852 $"} discount={null} />
+                <ProductDescrip img={img1} name={`Пряжа Arachna "Macrame MINI"`} price={"1053 $"} discount={'499 $'} />
+                <ProductDescrip img={img2} name={`Шнур "Gamma" 0.8 мм, 50 м`} price={"852 $"} discount={null} />
+                <ProductDescrip img={img1} name={`Пряжа Arachna "Macrame MINI"`} price={"1053 $"} discount={'499 $'} />
+                <ProductDescrip img={img2} name={`Шнур "Gamma" 0.8 мм, 50 м`} price={"852 $"} discount={null} />
+            </div>
         </>
     );
 }
