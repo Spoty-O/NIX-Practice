@@ -1,0 +1,112 @@
+.prod_comment {
+    display: flex;
+    align-items: center;
+}
+
+.prod_comment>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 50px;
+    font-size: 30px;
+    background-color: inherit;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    ;
+    border: none;
+}
+
+.prod_comment>button:first-of-type {
+    position: relative;
+    right: 54px;
+}
+
+.prod_comment>button:last-of-type {
+    position: relative;
+    left: 54px;
+}
+
+.prod_comment .comment_list {
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0 24px;
+}
+
+.prod_comment .comment_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 550px;
+    height: 190px;
+    background: #FAF9F9;
+    border-radius: 20px;
+}
+
+.prod_comment .comment_info {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prod_comment .comment_info>span:first-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.prod_comment .comment_info>span:last-of-type {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 76px;
+    padding: 15px 45px 15px 45px;
+}
+
+.prod_comment .comment_info>img:first-of-type {
+    width: 58px;
+    height: 58px;
+}
+
+.prod_comment .comment_info span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #424242;
+}
+
+.prod_comment .comment_info>span:first-of-type {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prod_comment .comment_info>span:last-of-type {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #BDBDBD;
+}
+
+.prod_comment .comment_info i {
+    margin-top: 8px;
+    color: #FEDC01;
+}
+
+.prod_comment .comment_block>p:first-of-type>span:first-of-type {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prod_comment .comment_block>p:first-of-type>span:last-of-type {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}

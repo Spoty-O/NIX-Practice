@@ -1,0 +1,11 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.allPadding {
+    padding-left: 150px;
+    padding-right: 150px;
+}

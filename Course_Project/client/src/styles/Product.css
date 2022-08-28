@@ -1,0 +1,163 @@
+.prod_full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #424242;
+}
+
+.prod_full .big_names {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod_full .big_names>i {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+}
+
+.prod_full .medium_discr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.prod_full>* {
+    display: flex;
+}
+
+.prod_full>div:first-of-type>* {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2);
+    margin-right: 45px;
+}
+
+.prod_full .prod_radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+}
+
+.prod_full .color_circle {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: 1px solid #BDBDBD;
+}
+
+.prod_full .color_circle:checked {
+    height: 50px;
+    width: 50px;
+    border: 7px solid #fff;
+    animation: outline-checked;
+    animation-duration: 0.1s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes outline-checked {
+    0% {
+        outline-offset: 0;
+    }
+
+    100% {
+        outline-offset: -0.2rem;
+    }
+}
+
+.prod_full table,
+.prod_full table * {
+    border-collapse: collapse;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.prod_full table tbody tr {
+    height: 72px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.prod_full table tr td:first-of-type {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prod_full table tr td:last-of-type {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prod_full .price_control {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.prod_full .price_control>* {
+    margin-right: 40px;
+}
+
+.prod_full .price_control div {
+    padding: 10px 10px 10px 10px;
+    background-color: inherit;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+}
+
+.prod_full .price_control div button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    border: none;
+    background-color: inherit;
+    color: #BDBDBD;
+    margin: 0 4px;
+}
+
+.prod_full .price_control>button {
+    border: none;
+    padding: 13px 45px;
+    gap: 11px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    border-radius: 49px;
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.prod_full>p {
+    margin-top: 41px;
+    margin-bottom: 32px;
+}
+
+.prod_full>div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}

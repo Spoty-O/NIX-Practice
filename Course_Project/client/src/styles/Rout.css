@@ -1,0 +1,20 @@
+.rout {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+}
+
+.rout > * {
+    text-decoration: none;
+    color: #424242;
+    margin-right: 8px;
+}
+
+.rout > *:hover {
+    text-decoration: underline;
+}
