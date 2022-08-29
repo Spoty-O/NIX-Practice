@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     width: 67%;
-    border-bottom: 1px solid #BDBDBD;
     padding-bottom: 24px;
     margin-bottom: 0;
     margin-top: 64px;
@@ -38,6 +37,7 @@
 
 .backet_content {
     display: flex;
+    gap: 0 20px;
 }
 
 .backet_content>div:first-of-type {
@@ -47,6 +47,8 @@
 .backet_list {
     height: 619px;
     overflow-y: scroll;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
 }
 
 .backet_list .list_prod_info {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/ProductDescrip.css';
 
 function ProductDescrip(props) {
@@ -17,8 +18,8 @@ function ProductDescrip(props) {
                 <i className={heart} onClick={() => { heart === reg ? setHeart(sol) : setHeart(reg) }}></i>
                 <i className="fa-solid fa-ellipsis"></i>
             </div>
-            <img src={props.img} alt="none" style={{ height: '150px' }} />
-            <p className='prod_name'>{props.name}</p>
+            <Link to={'/product'}><img src={props.img} alt="none" style={{ height: '150px', width: '100%' }} /></Link>
+            <Link to={'/product'} className='prod_name'>{props.name}</Link>
             <div className='prod_colors'>
                 {arr.map((item, index) => <div key={index} className='color_circle' style={{ backgroundColor: item }}></div>)}
                 <span>+5</span>

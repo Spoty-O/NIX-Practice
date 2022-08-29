@@ -3,7 +3,7 @@ import '../styles/Catalog.css';
 import AsideBar from './AsideBar.jsx';
 import ProductDescrip from './ProductDescrip.jsx';
 import Rout from './Rout.jsx';
-import Slide from './Slide.jsx';
+import Slider from './Slider.jsx';
 
 import img1 from '../styles/Prod1.svg';
 import img2 from '../styles/Prod2.svg';
@@ -26,9 +26,7 @@ function Catalog() {
     const price_arr = ['332 $', '422 ₽', '1092 $', '1053 $', '852 $', '617 $'];
     return (
         <>
-            <div className='slider'>
-                <Slide />
-            </div>
+            <Slider />
             <Rout />
             <div className='price_filter'>
                 <button>Цена <i className="fa-solid fa-arrow-up"></i></button>

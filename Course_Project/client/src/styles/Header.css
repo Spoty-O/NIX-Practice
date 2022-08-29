@@ -50,9 +50,29 @@ header .nav_bar .nav_elements {
     display: flex;
     align-items: center;
     border: 1px solid #BDBDBD;
+    color: #976464;
     border-radius: 46px;
     padding: 10px 15px 10px 15px;
     background-color: inherit;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+header .nav_bar .nav_elements .but_span {
+    margin-left: 10px;
+    color: #BDBDBD;
+}
+
+header .nav_bar .nav_elements:not(.search):active .but_span {
+    color: #FFFFFF; 
+}
+
+header .nav_bar .nav_elements:not(.search):active {
+    color: #FFFFFF; 
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
 }
 
 header .nav_bar .search input {
@@ -69,20 +89,6 @@ header .nav_bar .search input {
     line-height: 17px;
 }
 
-header .nav_bar .nav_elements i {
-    color: #976464;
-}
-
-header .nav_bar .nav_elements .but_span {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    margin-left: 10px;
-    color: #BDBDBD;
-}
-
 header .nav_bar button {
     position: relative;
 }
@@ -91,7 +97,7 @@ header .ellipse {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 17px;
     height: 17px;
     background: #D3D3B5;
@@ -99,7 +105,7 @@ header .ellipse {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
-    top: -5px;
+    top: -18px;
     right: 0;
 }
 

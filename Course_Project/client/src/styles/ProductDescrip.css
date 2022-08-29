@@ -9,6 +9,10 @@
     border-radius: 20px;
 }
 
+.prod_scrip a {
+    text-decoration: none;
+}
+
 .prod_scrip>* {
     height: auto;
 }
@@ -25,19 +29,21 @@
     font-size: 24px;
 }
 
-.prod_scrip p {
+.prod_scrip .prod_name {
     width: 100%;
+    margin: 16px 0;
     font-family: 'Montserrat';
     font-style: normal;
     color: #424242;
     overflow: hidden;
-}
-
-.prod_scrip .prod_name {
     font-weight: 400;
     font-size: 16px;
     line-height: 105%;
     height: 34px;
+}
+
+.prod_scrip .prod_name:hover {
+    text-decoration: underline;
 }
 
 .prod_scrip .prod_colors {

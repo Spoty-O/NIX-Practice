@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import img from '../styles/Hobby_Art_4_1.svg';
 
@@ -12,12 +13,12 @@ function Header() {
             </div>
             <div className='allPadding nav_bar'>
                 <nav>
-                    <a href="/#">Каталог</a>
-                    <a href="/#">Оплата и доставка</a>
-                    <a href="/#">Бонусная программа</a>
-                    <a href="/#">О компании</a>
-                    <a href="/#">Контакты</a>
-                    <a href="/#"><img src={img} alt="none" /></a>
+                    <Link to={'/'}>Каталог</Link>
+                    <Link to={'/'}>Оплата и доставка</Link>
+                    <Link to={'/'}>Бонусная программа</Link>
+                    <Link to={'/'}>О компании</Link>
+                    <Link to={'/'}>Контакты</Link>
+                    <Link to={'/'}><img src={img} alt="none" /></Link>
                     <div className='nav_elements search'>
                         <input type="text" placeholder='Поиск товара'/>
                         <i className="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -26,20 +27,20 @@ function Header() {
                         <i className="fa-solid fa-user" />
                         <span className='but_span'> Войти</span>
                     </button>
-                    <button className='nav_elements'>
+                    <Link to={'/#'} className='nav_elements'>
                         <i className="fa-solid fa-heart" />
                         <span className='but_span'> Избранное</span>
                         <div className='ellipse'>
                             <span>2</span>
                         </div>
-                    </button>
-                    <button className='nav_elements'>
+                    </Link>
+                    <Link to={'/backet'} className='nav_elements'>
                         <i className="fa-solid fa-basket-shopping" />
                         <span className='but_span'> Корзина</span>
                         <div className='ellipse'>
                             <span>2</span>
                         </div>
-                    </button>
+                    </Link>
                 </nav>
             </div>
         </header>

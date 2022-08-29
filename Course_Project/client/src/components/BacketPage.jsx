@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from './Header';
 import Backet from './Backet';
 
 function BacketPage() {
+
+    document.getElementById('root').style.background = '#FFFFFF';
+
     return (
         <div style={{ background: '#FFFFFF', paddingBottom: '100px' }}>
-            <Header />
             <div className='allPadding'>
                 <Backet />
             </div>
