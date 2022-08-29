@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Backet.css'
 import Rout from './Rout';
+import { Link } from 'react-router-dom';
 
 import img from '../styles/Prod1.svg';
 import img1 from '../styles/Prod4.svg';
@@ -8,10 +9,13 @@ import img2 from '../styles/Prod5.svg';
 import ProductDescrip from './ProductDescrip';
 
 function Backet() {
+
+    let [count, setCount] = React.useState(1);
+
     return (
         <>
             <Rout />
-            <p className='back_p'><span>Моя корзина</span><span><a href="/#">Очистить корзину</a></span></p>
+            <p className='back_p'><span>Моя корзина</span><span><Link to={'/'}>Очистить корзину</Link></span></p>
             <div className='backet_content'>
                 <div className='backet_list'>
                     <table className='list_prod_info'>
@@ -22,9 +26,9 @@ function Backet() {
                                 <td className='td_price'>332 $</td>
                                 <td>
                                     <div>
-                                        <button>–</button>
-                                        <span>1</span>
-                                        <button>+</button>
+                                        <button onClick={() => {setCount(count - 1)}}>–</button>
+                                        <span>{count}</span>
+                                        <button onClick={() => {setCount(count + 1)}}>+</button>
                                     </div>
                                 </td>
                                 <td className='td_price'>664 $</td>

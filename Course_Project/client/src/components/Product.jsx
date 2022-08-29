@@ -10,6 +10,8 @@ import CommentSlider from './CommentSlider';
 
 function Product() {
 
+    const [count, setCount] = React.useState(1);
+
     const [heart, setHeart] = React.useState("fa-regular fa-heart");
     const reg = "fa-regular fa-heart";
     const sol = "fa-solid fa-heart";
@@ -61,9 +63,9 @@ function Product() {
                         <div className='price_control'>
                             <span className='big_names'>332 $</span>
                             <div>
-                                <button>–</button>
-                                <span>1</span>
-                                <button>+</button>
+                                <button onClick={() => {setCount(count - 1)}}>–</button>
+                                <span>{count}</span>
+                                <button onClick={() => {setCount(count + 1)}}>+</button>
                             </div>
                             <button>Добавить в корзину</button>
                         </div>

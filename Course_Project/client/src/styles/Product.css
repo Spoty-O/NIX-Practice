@@ -125,6 +125,7 @@
 }
 
 .prod_full .price_control div button {
+    cursor: pointer;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -137,6 +138,8 @@
 }
 
 .prod_full .price_control>button {
+    position: relative;
+    cursor: pointer;
     border: none;
     padding: 13px 45px;
     gap: 11px;
@@ -149,6 +152,15 @@
     line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.prod_full .price_control>button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.prod_full .price_control>button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    top: 2px;
 }
 
 .prod_full>p {

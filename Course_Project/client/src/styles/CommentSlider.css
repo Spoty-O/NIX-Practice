@@ -4,6 +4,7 @@
 }
 
 .prod_comment>button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,6 @@
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
-    ;
     border: none;
 }
 

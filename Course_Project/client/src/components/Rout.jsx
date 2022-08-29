@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Rout.css';
 
 function Rout() {
     return (
         <nav className='rout'>
-            <a href="/#">Главная</a>
+            <Link to={'/'}>Главная</Link>
             <i className="fa-solid fa-arrow-right-long"></i>
-            <a href="/#">Каталог</a>
+            <Link to={'/'}>Каталог</Link>
             <i className="fa-solid fa-arrow-right-long"></i>
-            <a href="/#">Макраме</a>
+            <Link to={'/'}>Макраме</Link>
         </nav>
     );
 }
