@@ -76,7 +76,6 @@
     <script>
 
         $(document).ready(function () {
-            let temp;
             $('#books tr:even').css('background', 'gray');
             $('#news').children('p').eq(2).find('span').eq(0).html($('#books td:contains(Ajax в действии)').eq(0).html());
             $('#books tbody tr').each((index, element) => {
