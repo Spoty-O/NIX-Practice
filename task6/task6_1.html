@@ -78,11 +78,9 @@
         $(document).ready(function () {
             let temp;
             $('#books tr:even').css('background', 'gray');
-            $('#news').children('p').eq(2).find('span')[0].innerHTML = $('#books td:contains(Ajax в действии)')[0].innerHTML;
+            $('#news').children('p').eq(2).find('span').eq(0).html($('#books td:contains(Ajax в действии)').eq(0).html());
             $('#books tbody tr').each((index, element) => {
-                temp = $(element).find('.doc')[0];
-                temp.setAttribute('href', $(element).children('td')[0].textContent.toLowerCase() + '.pdf');
-                temp.textContent = 'купить ';
+                $(element).find('.doc').eq(0).attr('href', $(element).children('td').eq(0).text().toLowerCase() + '.pdf').text('купить ');
             });
         });
 
